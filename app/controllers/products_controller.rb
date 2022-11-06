@@ -1,9 +1,10 @@
 class ProductsController < ApplicationController
-  skip_before_action :protect_pages, only: [:index, :show]
+  skip_before_action :protect_pages, only: %i[index show]
 
   def index
     @categories = Category.order(name: :asc).load_async
-        @pagy, @products = pagy_countless(FindProducts.new.call(params).load_async, items: 12)
+    @pagy, @products =
+      pagy_countless(FindProducts.new.call(params).load_async, items: 12)
   end
 
   def show
@@ -15,7 +16,7 @@ class ProductsController < ApplicationController
   end
 
   def create
-   @product = Product.new(product_params)
+    @product = Product.new(product_params)
 
     if @product.save
       redirect_to products_path, notice: t(".created")
@@ -23,7 +24,7 @@ class ProductsController < ApplicationController
       render :new, status: :unprocessable_entity
     end
   end
-  
+
   def edit
     authorize! product
   end
@@ -54,10 +55,19 @@ class ProductsController < ApplicationController
   end
 
   def product_params_index
-    params.permit(:category_id, :min_price, :max_price, :query_text, :order_by, :page, :favorites)
+    params.permit(
+      :category_id,
+      :min_price,
+      :max_price,
+      :query_text,
+      :order_by,
+      :page,
+      :favorites,
+      :user_id
+    )
   end
 
   def product
-    @product = Product.find(params[:id])
+    @product ||= Product.find(params[:id])
   end
 end
