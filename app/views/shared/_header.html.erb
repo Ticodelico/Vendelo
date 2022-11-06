@@ -13,7 +13,7 @@
         "
       >
        <div> <%=link_to products_path, class: "text-fuchsia-50 hover:text-fuchsia-400" do%>
-        <h1>Sex Shop</h1>
+        <h1 class="text-2xl">TicoStore™</h1>
         <% end %>
         </div>
        
@@ -27,26 +27,26 @@
               md:pt-0"
           >
             <li>
-              <%= link_to t('.add'), new_product_path, class: "md:p-4 py-2 block hover:text-white-400 text-white", data: { turbo_frame: "modal" } if Current.user %>
+              <%= link_to t('.add'), new_product_path, class: "bg-transparent hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white text-lg font-semibold hover:text-white py-2 px-4 hover:border-transparent rounded", data: { turbo_frame: "modal" } if Current.user %>
             </li>
             <li>
-            <%= link_to t('.categories'), categories_path, class: "md:p-4 py-2 block hover:text-white-400 text-white" if Current.user&.admin? %>
+            <%= link_to t('.categories'), categories_path, class: "bg-transparent hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white text-lg font-semibold hover:text-white py-2 px-4 hover:border-transparent rounded" if Current.user&.admin? %>
             
             </li>
             <li>
-            <%= link_to t('.favorites'), favorites_path, class: "md:p-4 py-2 block hover:text-white-400 text-white" if Current.user%>
+            <%= link_to t('.favorites'), favorites_path, class: "bg-transparent hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white text-lg font-semibold hover:text-white py-2 px-4 hover:border-transparent rounded" if Current.user%>
             </li>
             <li>
-            <%= link_to t('.login'), new_session_path, class: "md:p-4 py-2 block hover:text-grey-400 text-white" unless Current.user %>
+            <%= link_to t('.login'), new_session_path, class: "bg-transparent hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white text-lg font-semibold hover:text-white py-2 px-4 hover:border-transparent rounded" unless Current.user %>
             </li>
             <li>
-            <%= link_to t('.register'), new_user_path, class: "md:p-4 py-2 block hover:text-grey-white text-white" unless Current.user %>
+            <%= link_to t('.register'), new_user_path, class: "bg-transparent hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white text-lg font-semibold hover:text-white py-2 px-4 hover:border-transparent rounded" unless Current.user %>
             </li>
             <li>
               <%= link_to t('.logout'), session_path(Current.user.id), data: {
               turbo_method: :delete,
               turbo_confirm: t('common.confirm')
-            }, class: "md:p-4 py-2 block hover:text-sky-800 text-sky-200" if Current.user %>
+            }, class: "bg-transparent hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white text-lg font-semibold hover:text-white py-2 px-4 hover:border-transparent rounded" if Current.user %>
             </li>
 
           </ul>

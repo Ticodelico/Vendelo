@@ -1,9 +1,38 @@
-<%= image_tag @product.photo, width: 200 if @product.photo.attached? %>
-<h1 class='title'><%= @product.title %></h1>
-<p class='description'><%= @product.description %></p>
-
-<span class='price'><%= @product.price %>$</span>
+<div>
 <br>
+ <br>
+  <br>
+   <br>
+    
+<div class="flex justify-center">
+  <div class="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-sky-100 shadow-lg">
+<div class='w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg'><%= image_tag "productimage.png", width: 300%></div>
+<div class="p-6 flex flex-col justify-start">
+  <div class='text-gray-900 text-xl font-medium mb-2'><%= @product.title %></div>
+    <p class='text-pink-700 text-base mb-4'><%= @product.description %></p>
+    <span class='text-center text-gray-700 text-base mt-1'><%= @product.price %>$</span>
+
+    <div><%= link_to t('.view_more_products', username: @product.user.username), user_path(@product.user.username) %>
+    <% if @product.favorite %>
+    <%= link_to '💔', favorite_path(@product.id), data: {
+    turbo_method: :delete
+    } %>
+    <% else %>
+    <%= link_to '❤️', favorites_path(product_id: @product.id), data: {
+    turbo_method: :post
+    } %>
+    <% end %>
+    </div>
+    </div>
+    </div>
+    </div>
+    <br>
+     <br>
+      <br>
+       <br>
+        
+    </div>
+
 <%= link_to t('.edit'), edit_product_path(@product) if @product.owner? %>
 
 <%= link_to t('.delete'), product_path(@product), 
@@ -12,7 +41,9 @@
   turbo_confirm: t('common.confirm')
 } if @product.owner? %>
 
-<%= link_to t('.view_more_products', username: @product.user.username), user_path(@product.user.username) %>
- 
- <%= render partial: 'favorite', locals: { product: @product } %>
+</div>
+
+
+
+
 
