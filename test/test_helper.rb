@@ -10,6 +10,6 @@ class ActiveSupport::TestCase
   fixtures :all
 
   def login
-    post sessions_path, params: { login: 'lilly@tokay.com', password: 'testme' }
+    post sessions_path, params: { login: 'lilly@vendelo.com', password: 'testme' }
   end
 end

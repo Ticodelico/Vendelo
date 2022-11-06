@@ -1,8 +1,0 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-tomatos:
-  primary_color: #fff
-  secundary_color: #000
-  slogan: We live to serve.
-  menu: tomatos
-

@@ -1,19 +1,4 @@
 Rails.application.routes.draw do
-  namespace :admin do
-      resources :users
-      resources :restaurants
-      resources :products
-      resources :menus
-      resources :favorites
-      resources :categories
-      resources :brands
-
-      root to: "users#index"
-    end
-  resources :suscriptions
-  resources :menus
-  resources :restaurants
-  resources :brands
   get 'favorites/create'
 
   namespace :authentication, path: '', as: '' do

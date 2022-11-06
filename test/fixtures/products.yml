@@ -1,48 +1,185 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-salchipapas:
-  title: Salchipapas
-  description: Papas, salchichas, salsa de tomate y mayonesa.
-  category: general
-  user: admin
+ps4:
+  title: PS4 Fat
+  description: PS4 en buen estado
+  price: 150
+  category: videogames
+  user: lilly
   
-papicarne:
-  title: Papicarne
-  description: Papas, Carne, Salsa de Tomate y Mayonesa.
-  category: general
-  user: admin
+switch:
+  title: Nintendo Switch
+  description: Le falla el lector de tarjeta SD
+  price: 195
+  category: videogames
+  user: niyo
 
-nachos:
-  title: Nachos
-  description: Tortillas, Frijoles, Carne Mechada, Chimichurri, Salsa De Tomate, Mayoneas y Salsa de queso.
-  category: general
-  user: admin
 
-nachos:
-  title: Nachos
-  description: Tortillas, Frijoles, Carne Mechada, Chimichurri, Salsa De Tomate, Mayoneas y Salsa de queso.
-  category: general
-  user: admin
+nintendo64:
+  title: Nintendo 64 en buen estado
+  description: Con su caja, solo tiene algún pequeño arañazo
+  price: 190
+  category: videogames
+  user: niyo
 
-patacones:
-  title: Patacones Especiales
-  description: 5 Unidades, Frijoles, Carne Mechada, Chimichurri, Salsa De Tomate, Mayoneas y Salsa de queso.
-  category: general
-  user: admin
+megadrive:
+  title: Sega Megadrive
+  description: Funciona perfectamente, solo consola
+  price: 90
+  category: videogames
+  user: niyo
 
-hamburguesa:
-  title: Hamburguesa Sencilla
-  description: Torta,  lechuga, Tomate, Salsa De Tomate, Mayonesa y Salsa de queso
-  category: general
-  user: admin
 
-galloPintoEnSalsa:
-  title: Gallo Pinto con Carne en Salsa
-  description: 
-  category: desayunos
-  user: admin
+driver2:
+  title: Driver 2 para ps1
+  description: Como nuevo en su caja y con instrucciones
+  price: 25
+  category: videogames
+  user: niyo
 
-  galloPinto:
-  title: Gallo Pinto 
-  description: Lengua, Chuleta, Bistec, Filet de Pollo
-  category: desayunos
-  user: admin
+ps5:
+  title: PS5 nueva sin lector
+  description: A estrenar, usada solo dos veces.
+  price: 650
+  category: videogames
+  user: niyo
+
+gameboy:
+  title: Game Boy Color
+  description: Con su caja. Color morada transparente.
+  price: 150
+  category: videogames
+  user: niyo
+
+air:
+  title: Macbook Air
+  description: Le falla la batería
+  price: 250
+  category: computers
+  user: niyo
+
+imac:
+  title: iMac 27" 2015
+  description: i5 con 8gb de ram y SSD
+  price: 90
+  category: computers
+  user: niyo
+
+ryzen:
+  title: Ryzen 5950x
+  description: Sin estrenar precintado como nuevo
+  price: 590
+  category: computers
+  user: niyo
+
+nvidia:
+  title: Nvidia 3090ti
+  description: Solo usada 3 meses la vendo porque no la uso
+  price: 1500
+  category: computers
+  user: niyo
+  
+
+ram:
+  title: 16GB Ram DDR4 3200mhz
+  description: Funciona perfectamente
+  price: 95
+  category: computers
+  user: niyo
+
+renault:
+  title: Renault Clio 2009
+  description: 85000km, 95cv
+  price: 4500
+  category: cars
+  user: niyo
+
+seat:
+  title: Seat Panda clásico
+  description: Tan solo 90000km, 75cv. Del año 1980
+  price: 5500
+  category: cars
+  user: niyo
+
+michael:
+  title: Vinilo Michael Jackson Thriller
+  description: Como nuevo a estrenar
+  price: 45
+  category: music
+  user: niyo
+
+queen:
+  title: Vinilo Queen
+  description: Ligeras marcas de uso de los años 80
+  price: 35
+  category: music
+  user: niyo
+
+tv:
+  title: Televisión LG 48 pulgadas
+  description: Viene con smart TV funciona perfectamente
+  price: 350
+  category: electronic
+  user: niyo
+
+kindle:
+  title: Lector de libros Kindle 2010
+  description: Tiene marcas de uso pero funciona bien
+  price: 35
+  category: electronic
+  user: niyo
+
+ipod:
+  title: iPod touch
+  description: Como nuevo a estrenar con su caja
+  price: 175
+  category: electronic
+  user: niyo
+
+harry:
+  title: Colección entera de Harry Potter
+  description: Todos los libros de la saga. Bien cuidados!
+  price: 65
+  category: books
+  user: niyo
+
+hobbit:
+  title: El hobbit
+  description: Libro en buen estado
+  price: 15
+  category: books
+  user: niyo
+
+iphone:
+  title: iPhone 13
+  description: Funciona correctamente.
+  price: 400
+  category: mobile
+  user: niyo
+
+pixel:
+  title: Google Pixel 4
+  description: Le falla la batería
+  price: 100
+  category: mobile
+  user: niyo
+
+surf:
+  title: Tabla de surf
+  description: Usada dos veces. Como nueva.
+  price: 125
+  category: sports
+  user: niyo
+
+tennis:
+  title: Raqueta de tenis profesional
+  description: Fabricada en fibra de carbono. Solo un par de arañazos
+  price: 135
+  category: sports
+  user: niyo
+
+skate:
+  title: Skateboard
+  description: Como nuevo con las ruedas recién cambiadas
+  price: 75
+  category: sports
+  user: niyo
