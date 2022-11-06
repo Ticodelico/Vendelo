@@ -5,8 +5,14 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-Category.create(name: 'Consolas')
-Category.create(name: 'Laptops')
-Category.create(name: 'Ropa')
-Category.create(name: 'Celulares')
-Category.create(name: 'Relojes')
+Category.create(name: "Consolas")
+Category.create(name: "Laptops")
+Category.create(name: "Ropa")
+Category.create(name: "Celulares")
+Category.create(name: "Relojes")
+User.create(
+  email: "admin@vendelo.com",
+  username: "vendelo",
+  password: "vendelo12345",
+  boolean: true
+)
